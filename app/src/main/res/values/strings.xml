@@ -2,4 +2,5 @@
     <string name="app_name">IMCApp_Hugo_Correa_Cortijo</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
+    <string name="altura">Altura</string>
 </resources>
