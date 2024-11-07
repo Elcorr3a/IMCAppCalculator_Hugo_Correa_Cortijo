@@ -13,4 +13,8 @@
     <color name="bg_button">#EB1555</color>
     <color name="title_text">#FF8D8E98</color>
     <color name="bg_fab">#FF6200EE</color>
+    <color name="infrapeso">#ADD8E6</color>
+    <color name="normal">#32CD32</color>
+    <color name="sobrepeso">#FFD700</color>
+    <color name="obesidad">#FF4500</color>
 </resources>

@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvHeight"
                 android:textSize="38sp"
-                android:text="120cm"
+                android:text="120 cm"
                 android:textStyle="bold"
                 android:textColor="@color/white"/>
             <com.google.android.material.slider.RangeSlider
@@ -117,7 +117,6 @@
         app:layout_constraintStart_toStartOf="@id/viewMale"
         app:layout_constraintEnd_toStartOf="@+id/viewFemale">
     <LinearLayout
-        android:id="@+id/viewPeso"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"

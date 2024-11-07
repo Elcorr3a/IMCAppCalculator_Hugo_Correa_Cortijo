@@ -6,6 +6,10 @@
     <string name="peso">Peso</string>
     <string name="edad">Edad</string>
     <string name="calcular">Calcular</string>
-
-
+    <string name="recalcular">Re-calcular</string>
+    <string name="tuResultado">Tu resultado</string>
+    <string name="infrapeso">Peso inferior al normal</string>
+    <string name="normal">Normal</string>
+    <string name="sobrepeso">Peso superior al normal</string>
+    <string name="obesidad">Obesidad</string>
 </resources>

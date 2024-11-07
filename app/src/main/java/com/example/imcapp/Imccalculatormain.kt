@@ -1,5 +1,6 @@
 package com.example.imcapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -71,19 +72,21 @@ class Imccalculatormain : AppCompatActivity() {
             setage(true)
         }
         removeEdad.setOnClickListener{
-            setWeight(false)
+            setage(false)
         }
         botonCalcular.setOnClickListener{
             calculateIMC()
             navigate2result(resultado)
         }
 
-
     }
 
     private fun navigate2result(resultado:Double) {
-
+        val intentGA = Intent(this, ImcResultActivity::class.java)
+        intentGA.putExtra("resultadoIMC", resultado)
+        startActivity(intentGA)
     }
+
 
     private fun calculateIMC(): Double {
         val alturaEnMetros = tvHeight.text.toString().replace(" cm", "").toDouble() / 100
