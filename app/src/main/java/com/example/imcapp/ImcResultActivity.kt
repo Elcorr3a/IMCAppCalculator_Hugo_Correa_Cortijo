@@ -29,22 +29,25 @@ class ImcResultActivity : AppCompatActivity() {
         resultadoNumero.text = DecimalFormat("#.##").format(resultadoIMC)
         calcularComposicionCorporal(resultadoIMC)
     }
-    @SuppressLint("ResourceAsColor")
+
     private fun calcularComposicionCorporal(resultadoIMC: Double?) {
         if (resultadoIMC != null) {
             if (resultadoIMC < 18.5){
                 resultadoParteArriba.text = getString(R.string.infrapeso)
-               resultadoParteArriba.setTextColor(getColor(R.color.infrapeso))
+                resultadoParteArriba.setTextColor(getColor(R.color.infrapeso))
+                resultadoParteAbajo.text = getString(R.string.textoinfrapeso)
             }else if(resultadoIMC >= 18.5 && resultadoIMC <25 ){
                 resultadoParteArriba.text = getString(R.string.normal)
                 resultadoParteArriba.setTextColor(getColor(R.color.normal))
+                resultadoParteAbajo.text =getString(R.string.textonormal)
             }else if(resultadoIMC >= 25 && resultadoIMC <30 ){
-            resultadoParteArriba.text = getString(R.string.sobrepeso)
+                resultadoParteArriba.text = getString(R.string.sobrepeso)
                 resultadoParteArriba.setTextColor(getColor(R.color.sobrepeso))
-
+                resultadoParteAbajo.text =getString(R.string.textosobrepeso)
             }else if(resultadoIMC >= 30){
-            resultadoParteArriba.text = getString(R.string.obesidad)
+                resultadoParteArriba.text = getString(R.string.obesidad)
                 resultadoParteArriba.setTextColor(getColor(R.color.obesidad))
+                resultadoParteAbajo.text =getString(R.string.textoobesidad)
             }
         }
     }

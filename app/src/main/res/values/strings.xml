@@ -12,4 +12,8 @@
     <string name="normal">Normal</string>
     <string name="sobrepeso">Peso superior al normal</string>
     <string name="obesidad">Obesidad</string>
+    <string name="textoinfrapeso">Estas por debajo de lo optimo para tu peso y altura</string>
+    <string name="textonormal">Estas de lokos</string>
+    <string name="textosobrepeso">Estas por encima de lo optimo para tu peso y altura</string>
+    <string name="textoobesidad">Estas demasiado por encima de lo optimo para tu peso y altura, deberias cuidarte mas</string>
 </resources>
