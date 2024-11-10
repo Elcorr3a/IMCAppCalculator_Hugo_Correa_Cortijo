@@ -41,13 +41,14 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/title_text"
                 android:textSize="38sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:layout_marginBottom="100dp"/>
             <TextView
                 android:id="@+id/resultadoNumero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/title_text"
-                android:textSize="38sp"
+                android:textColor="@color/white"
+                android:textSize="100sp"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/resultadoParteAbajo"
@@ -55,7 +56,9 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/title_text"
                 android:textSize="38sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="20dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

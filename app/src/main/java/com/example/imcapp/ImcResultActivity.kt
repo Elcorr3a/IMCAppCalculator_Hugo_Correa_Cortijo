@@ -1,11 +1,13 @@
 package com.example.imcapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.graphics.toColor
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -15,6 +17,7 @@ class ImcResultActivity : AppCompatActivity() {
     private lateinit var resultadoNumero:TextView
     private lateinit var resultadoParteArriba:TextView
     private lateinit var resultadoParteAbajo:TextView
+    private lateinit var botonCalcular:AppCompatButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,6 +28,7 @@ class ImcResultActivity : AppCompatActivity() {
             insets
         }
         initComponents()
+        initListeners()
         val resultadoIMC: Double? = intent.extras?.getDouble("resultadoIMC")
         resultadoNumero.text = DecimalFormat("#.##").format(resultadoIMC)
         calcularComposicionCorporal(resultadoIMC)
@@ -51,11 +55,18 @@ class ImcResultActivity : AppCompatActivity() {
             }
         }
     }
-    private fun initListeners() {}
+    private fun initListeners() {
+        botonCalcular.setOnClickListener{
+            val intent = Intent(this, Imccalculatormain::class.java)
+            startActivity(intent)
+        }
+
+    }
     private fun initComponents() {
         resultadoNumero = findViewById(R.id.resultadoNumero)
         resultadoParteArriba = findViewById(R.id.resultadoParteArriba)
         resultadoParteAbajo = findViewById(R.id.resultadoParteAbajo)
+        botonCalcular = findViewById(R.id.botonCalcular)
     }
 
 }
